@@ -15,6 +15,7 @@ study-log/
 └── Java/
     └── Conditionals/
         └── Main.java
+```
 
 Python/ : 파이썬 기초 연습 및 알고리즘 문제 풀이
 
