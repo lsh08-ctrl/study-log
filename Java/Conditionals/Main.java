@@ -9,7 +9,7 @@ public class Main {
         if (n > 0) {
             System.out.println("양수입니다");
         
-        sc. close();
+        sc.close();
         }
     }
 }
