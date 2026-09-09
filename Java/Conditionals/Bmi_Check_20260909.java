@@ -26,5 +26,6 @@ public class Bmi_Check_20260909 {
         }
 
         System.out.printf("BMI: %.2f → %s", BMI, result);
+        sc.close();
     }
 }
