@@ -4,10 +4,10 @@ sec = int(input())
 # to_hms 함수를 정의한다.
 def to_hms(sec):
     # 시간, 분, 초 값을 반환한다.
-    h = sec // 3600
-    m = (sec % 3600) // 60
-    s = sec % 60
-    return h, m, s
+    hours = sec // 3600
+    minutes = (sec % 3600) // 60
+    seconds = sec % 60
+    return hours, minutes, seconds
 
 # 언패킹하여 출력한다.
 hours, minutes, seconds = to_hms(sec)
