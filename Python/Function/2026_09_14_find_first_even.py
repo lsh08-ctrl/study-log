@@ -1,14 +1,14 @@
-# int(input()) 으로 정수 한 개를 읽습니다. 예: 입력이 "-5" 이면 n == -5
-n = int(input())
+# input().split() 의 각 칸을 정수로 바꿔 리스트로 만듭니다. 예: "1 2 3" → nums=[1, 2, 3]
+nums = [int(x) for x in input().split()]
 
-# TODO: 절댓값과 부호 문자열을 함께 return 하는 함수를 직접 정의(def)하고,
-#   반환값을 언패킹해 "절댓값 부호" 형식으로 출력(print)하세요.
-def abs_sign(n):
-    if n < 0:
-        return -n, "음수"
-    elif n == 0:
-        return n, 0
-    else:
-        return  n, "양수"
-abs_value, sign = abs_sign(n)
-print(abs_value, sign)
+# first_even(nums) 함수를 정의한다.
+def first_even(nums):
+    # 순회하여 짝수를 찾으면 그 값 반환
+    for x in nums:
+        if x % 2 == 0:
+            return x
+    # 짝수가 하나도 없으면 "None"
+    return "None"
+
+# 함수를 호출하여 결과를 출력한다.
+print(first_even(nums))
