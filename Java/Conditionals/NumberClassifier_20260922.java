@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NumberClassifier_20260922 {
+public class numberclassifier_20260922 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
